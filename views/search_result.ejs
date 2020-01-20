@@ -2,22 +2,22 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>Products</title>
+  <title>students</title>
   <!--link rel='stylesheet' href='stylesheets/bootstrap.min.css'-->
 </head>
 <body>
   <h2>Result</h2>
   <br/><br/>
   <p>
-   <span><b>ID : </b><%= product.id %></span><br />
-   <span><b>Name : </b><%= product.name %></span><br/>
-   <span><b>Brand : </b><%= product.brand %></span><br />
-   <span><b>Description : </b><%= product.description %></span><br/>
-   <span><b>Price : </b><%= product.price %></span><br/>
+   <span><b>ID : </b><%= student.id %></span><br />
+   <span><b>Name : </b><%= student.name %></span><br/>
+   <span><b>Brand : </b><%= student.brand %></span><br />
+   <span><b>Description : </b><%= student.description %></span><br/>
+   <span><b>Price : </b><%= student.price %></span><br/>
   </p>
 
-  <form action='/products/delete' method='POST'>
-    <span><input type='hidden' name='id' value='<%= product.id %>'></span>
+  <form action='/students/delete' method='POST'>
+    <span><input type='hidden' name='id' value='<%= student.id %>'></span>
     <span><button type='submit'>Delete</button></span>
   </form>
 
